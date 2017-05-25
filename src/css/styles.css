@@ -29,6 +29,7 @@ html,
 body {
     font-family: 'Roboto', sans-serif;
     height: 100%;
+    overflow: hidden;
     background-color: lightgray;
 }
 
@@ -58,14 +59,49 @@ div.tooltip-inner-custom {
     transform: translateX(-50%);
 }
 
+.savedQueryFloat{
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    overflow: auto;
+    width: 100%;
+    pointer-events: none;
+}
+
+.savedQueryFloat > div {
+    position: relative;
+    left: 50%;
+    width: 30%;
+    transform: translateX(-50%);
+    pointer-events: auto;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.savedQueryFloat > div > select {
+
+}
+
 .bottomdiv {
     position: absolute;
     z-index: 10;
     bottom: 0;
     overflow: auto;
     width: 100%;
+    pointer-events: none;
 }
 
+.savedQuerySlideDown{
+    position: relative;
+    left: 50%;
+    display: block;
+    width: 200px;
+    height: 2em;
+    transform: translateX(-50%);
+    border-radius: 0 0 20px 20px;
+    background-color: white;
+    pointer-events: auto;
+}
 
 .slideupbutton {
     position: relative;
@@ -76,6 +112,7 @@ div.tooltip-inner-custom {
     transform: translateX(-50%);
     border-radius: 20px 20px 0 0;
     background-color: white;
+    pointer-events: auto;
 }
 
 .slideupbutton:focus {

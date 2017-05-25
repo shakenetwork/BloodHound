@@ -18,6 +18,7 @@ import QueryNodeSelect from './components/Float/QueryNodeSelect'
 import SessionClearModal from './components/Modals/SessionClearModal'
 import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup'
 import About from './components/Modals/About.jsx'
+import SavedQueries from './components/SavedQueries'
 
 export default class AppContainer extends Component {
 	render() {
@@ -46,6 +47,7 @@ export default class AppContainer extends Component {
 					<ZoomContainer />
 					<QueryNodeSelect />
 					<About />
+					<SavedQueries />
 				</div>
 			</CSSTransitionGroup>
 		);
