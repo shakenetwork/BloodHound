@@ -8,6 +8,13 @@ class SavedQueries extends Component {
             open: false
         }
     }
+
+    componentDidMount() {
+        jQuery(".selectpicker").selectpicker({
+            "title": "Select Options"        
+        }).selectpicker("render");
+    }
+
     _toggle(){
 
     }
@@ -16,7 +23,7 @@ class SavedQueries extends Component {
         return (
             <div className="savedQueryFloat">
                 <div>
-                    <select>
+                    <select className="selectpicker">
                         <option value="test">Query1</option>
                         <option value="test2">Query2</option>
                     </select>
